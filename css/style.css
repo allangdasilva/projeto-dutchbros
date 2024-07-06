@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'Futura';
+    src: url(../fonts/Futura\ Heavy\ font.ttf);
+}
 
 
 
@@ -7,10 +10,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: rgb(180, 180, 180);
+}
 header {
-    padding-inline: 3.5rem;
+    padding-inline: 5rem;
     height: 68px;
-    background-color: black;
+    background-color: white;
 }
 .header-container {
     display: flex;
@@ -18,9 +24,22 @@ header {
     align-items: center;
     height: 100%;
 }
+.nav-list {
+    flex-basis: 35.5%;
+}
 .nav-list ul {
     display: flex;
-    gap: 2rem;
+    gap: 2.4rem;
+    list-style: none;
+}
+.nav-list ul li a {
+    font-family: 'Futura';
+    font-size: 1.03rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.logo-header {
+    flex-basis: 40%;
 }
 .logo-header img {
     width: 140px;
