@@ -1,0 +1,31 @@
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding-inline: 3.5rem;
+    height: 68px;
+    background-color: black;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.nav-list ul {
+    display: flex;
+    gap: 2rem;
+}
+.logo-header img {
+    width: 140px;
+}
+.menu-header {
+    display: flex;
+    gap: 2.5rem;
+}
