@@ -2,16 +2,23 @@
     font-family: 'Futura';
     src: url(../fonts/Futura\ Heavy\ font.ttf);
 }
+@font-face {
+    font-family: 'Futura-Bold';
+    src: url(../fonts/unicode.futurab.ttf);
+}
 
 :root {
     --text-blue: #0F689E;
     --background-and-button-blue: #005F98;
+    --button-01: #00416C;
+    --border-blue: #00C5E1;
     --hover-button-blue: #154167;
     --hover-button-yellow: #D2BA28;
     --button-yellow: #F8E052;
     --background-orange: #E99F41;
-    --transparent-white: #ffffffd0;
+    --transparent-white: #fffffff1;
     --background-white: #FFFFFF;
+    --shadow: #0000007c;
 }
 
 * {
@@ -20,16 +27,20 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(180, 180, 180);
-    height: 200vh;
+    background-color: var(--background-white);
 }
+
+/* ============ HEADER ============ */
+
 header {
     height: 63px;
     background-color: var(--transparent-white);
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
 }
-.header-container {
+header .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,28 +50,84 @@ header {
     margin-inline: auto;
     
 }
-.nav-list {
+header .nav-list {
     flex-basis: 35.5%;
 }
-.nav-list ul {
+header .nav-list ul {
     display: flex;
     gap: 2.4rem;
     list-style: none;
 }
-.nav-list ul li a {
+header .nav-list ul li a {
     font-family: 'Futura';
     font-size: 1.02rem;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--text-blue);
 }
-.logo-header {
+header .logo-header {
     flex-basis: 40%;
 }
-.logo-header img {
+header .logo-header img {
     width: 140px;
 }
-.menu-header {
+header .menu-header {
     display: flex;
     gap: 2.5rem;
 }
+
+/* ============ HEADER END ============ */
+
+/* ============ MAIN ============ */
+
+/* ============ SECTION 01 ============ */
+main .section-01 {
+    background-image: url(../images/2024-Firecracker-Header-Desktop.webp);
+    background-size: cover;
+    height: 870px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 63px;
+}
+main .section-01-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+main .text-content-01 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-white);
+}
+main .text-content-01 h1 {
+    font-family: 'Futura';
+    font-size: 3.4rem;
+    max-width: 580px;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 10px var(--shadow);
+}
+main .text-content-01 p {
+    font-family: 'Futura';
+    font-size: 1.1rem;
+    max-width: 580px;
+    line-height: 1.6rem;
+    margin-bottom: 2.7rem;
+}
+main .button-01 button {
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-family: 'Futura-Bold';
+    font-size: 1.2rem;
+    border-radius: 40px;
+    background-color: var(--button-01);
+    border: 2px solid var(--border-blue);
+    color: var(--background-white);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+/* ============ SECTION 01 END ============ */
