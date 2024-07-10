@@ -82,7 +82,7 @@ header .menu-header {
 
 /* ============ SECTION 01 ============ */
 main .section-01 {
-    background-image: url(../images/2024-Firecracker-Header-Desktop.webp);
+    background-image: url(../images/2024-Chillin-W-Dutch-Mobile-Desktop.webp);
     background-size: cover;
     height: 870px;
     background-position: center center;
@@ -94,7 +94,12 @@ main .section-01-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    width: 67%;
+    height: 91%;
+}
+main .section-01-container img {
+    width: 73%;
+    margin-bottom: 2rem;
 }
 main .text-content-01 {
     text-align: center;
@@ -104,28 +109,22 @@ main .text-content-01 {
     align-items: center;
     color: var(--background-white);
 }
-main .text-content-01 h1 {
-    font-family: 'Futura';
-    font-size: 3.4rem;
-    max-width: 580px;
-    margin-bottom: 2rem;
-    text-shadow: 2px 2px 10px var(--shadow);
-}
 main .text-content-01 p {
     font-family: 'Futura';
-    font-size: 1.1rem;
-    max-width: 580px;
+    font-size: 1rem;
+    max-width: 460px;
     line-height: 1.6rem;
-    margin-bottom: 2.7rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.849);
 }
 main .button-01 button {
-    padding: 15px 50px;
+    padding: 15px 40px;
     text-transform: uppercase;
     font-family: 'Futura-Bold';
     font-size: 1.2rem;
     border-radius: 40px;
     background-color: var(--button-01);
-    border: 2px solid var(--border-blue);
+    border: none;
     color: var(--background-white);
     margin-bottom: 30px;
     cursor: pointer;
