@@ -88,17 +88,21 @@ main .section-01 {
     background-position: center center;
     background-repeat: no-repeat;
     margin-top: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 main .section-01-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 67%;
-    height: 91%;
+    margin-left: -440px;
+    margin-top: -70px;
+    max-width: 1280px;
 }
 main .section-01-container img {
-    width: 73%;
+    width: 670px;
     margin-bottom: 2rem;
 }
 main .text-content-01 {
