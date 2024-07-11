@@ -1,15 +1,4 @@
-@font-face {
-    font-family: 'Futura';
-    src: url(../fonts/Futura\ Heavy\ font.ttf);
-}
-@font-face {
-    font-family: 'Futura-Bold';
-    src: url(../fonts/unicode.futurab.ttf);
-}
-@font-face {
-    font-family: 'Futura-Semi';
-    src: url(../fonts/Futura\ Extra\ Black\ font.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --text-blue: #0F689E;
@@ -29,6 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 body {
     background-color: var(--background-white);
@@ -63,8 +53,8 @@ header .nav-list ul {
     list-style: none;
 }
 header .nav-list ul li a {
-    font-family: 'Futura';
     font-size: 1.02rem;
+    font-weight: 550;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--text-blue);
@@ -96,16 +86,19 @@ main .section-01 {
     align-items: center;
     justify-content: center;
 }
-main .section-01-container {
+main .section-01 > div {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    justify-content: flex-start;
+}
+main .content-container-01 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: -440px;
-    margin-top: -70px;
-    max-width: 1280px;
 }
-main .section-01-container img {
+main .content-container-01 img {
     width: 670px;
     margin-bottom: 2rem;
 }
@@ -118,18 +111,18 @@ main .text-content-01 {
     color: var(--background-white);
 }
 main .text-content-01 p {
-    font-family: 'Futura';
     font-size: 1rem;
+    font-weight: 550;
     max-width: 460px;
     line-height: 1.6rem;
     margin-bottom: 2rem;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.849);
 }
-main .button-01 button {
+main .btn-area-01 button {
     padding: 15px 40px;
     text-transform: uppercase;
-    font-family: 'Futura-Bold';
     font-size: 1.2rem;
+    font-weight: 700;
     border-radius: 40px;
     background-color: var(--button-01);
     border: none;
@@ -145,33 +138,31 @@ main .section-02 {
     text-align: center;
     padding-block: 70px;
 }
-main .section-02-container {
+main .div-container-02 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 } 
-main .section-02-container h2 {
-    font-family: 'Futura-Bold';
+main .div-container-02 h2 {
     font-size: 3.2rem;
     margin-bottom: 2.5rem;
     color: var(--background-and-button-blue);
 }
-main .section-02-container h2 span {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+main .div-container-02 h2 span {
     font-size: 4rem;
 }
-main .image-container {
+main .image-content-02 {
     display: flex;
     max-width: 1280px;
     margin-bottom: 5rem;
+    gap: 2rem;
 }
-main .image-container img {
+main .image-content-02 div img {
     width: 90%;
     margin-bottom: 1.3rem;
 }
-main .image-container h3 {
-    font-family: 'Futura-Bold';
+main .image-content-02 h3 {
     font-size: 2.3rem;
     text-transform: uppercase;
     color: var(--text-blue);
@@ -179,8 +170,8 @@ main .image-container h3 {
 main .button-02 button {
     padding: 15px 30px;
     text-transform: uppercase;
-    font-family: 'Futura-Bold';
     font-size: 1.1rem;
+    font-weight: 700;
     border-radius: 40px;
     background-color: var(--background-and-button-blue);
     border: none;
@@ -191,81 +182,56 @@ main .button-02 button {
 
 /* ============ SECTION 03 ============ */
 .section-03 {
-    width: 100%;
     padding-block: 60px;
     background-color: var(--background-and-button-blue);
 }
-.title-content-03 {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 3rem;
-}
-.title-content-03 h3 {
-    font-family: 'Futura-Bold';
-    font-size: 2.3rem;
-    color: var(--background-white);
-    flex-grow: 1;
-    flex-basis: 100%;
-    text-align: center;
-}
 .image-content-03 {
     display: flex;
-    justify-content: space-around;
-    gap: 5rem;
-    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    margin-inline: auto;
+    gap: 2rem;
 }
 .image-content-03 div {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-content-03 div h3 {
+    font-size: 2.3rem;
+    color: var(--background-white);
+    margin-bottom: 3rem;
 }
 .image-content-03 div img {
     width: 100%;
+    border-radius: 30px;
+    margin-bottom: 3rem;
 }
-.image-content-03 div:first-child {
-    border-radius: 45px;
-    box-shadow: 10px 8px 0px var(--background-orange);
+.image-content-03 div:first-child img {
+    box-shadow: rgb(248, 224, 82) -5px 5px, rgba(248, 224, 82, 0.60) -10px 10px, -15px 15px rgba(248, 224, 82, 0.400), rgba(248, 224, 82, 0.20) -20px 20px;
 }
-.image-content-03 div:first-child > img {
-    border-radius: 0px 40px 40px 0px;
-    box-shadow: 0px 13px 0px var(--background-orange);
+.image-content-03 div:nth-child(2) img {
+    box-shadow: rgb(248, 224, 82) 0px 5px, rgba(248, 224, 82, 0.60) 0px 10px, 0px 15px rgba(248, 224, 82, 0.400), rgba(248, 224, 82, 0.20) 0px 20px;
 }
-.image-content-03 div:nth-child(2) > img {
-    border-radius: 40px;
-    border: 10px solid var(--background-orange);
+.image-content-03 div:last-child img {
+    box-shadow: rgb(248, 224, 82) 5px 5px, rgba(248, 224, 82, 0.60) 10px 10px, 15px 15px rgba(248, 224, 82, 0.400), rgba(248, 224, 82, 0.20) 20px 20px;
 }
-.image-content-03 div:last-child {
-    border-radius: 45px;
-    box-shadow: -10px 8px 0px var(--background-orange);
-}
-.image-content-03 div:last-child > img {
-    border-radius: 40px 0px 0px 40px;
-    box-shadow: 0px 13px 0px var(--background-orange);
-}
-.btn-content-03 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.btn-area-03 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.image-content-03 div p {
     text-align: center;
-    flex-grow: 1;
-    flex-basis: 200%;
-}
-.btn-area-03 p {
-    font-family: 'Futura';
-    font-size: 1.3rem;
-    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    font-weight: 650;
     color: var(--background-white);
+    margin-bottom: 3rem;
 }
-
-.btn-area-03 button {
+.image-content-03 button {
     padding: 15px 40px;
     text-transform: uppercase;
-    font-family: 'Futura-Bold';
     font-size: 1.1rem;
+    font-weight: 700;
     border-radius: 40px;
     background-color: var(--button-yellow);
     border: none;
