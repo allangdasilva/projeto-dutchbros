@@ -44,15 +44,15 @@ header .header-container {
     margin-inline: auto;
     
 }
-header .nav-list {
+header .header-nav {
     flex-basis: 35.5%;
 }
-header .nav-list ul {
+header .header-nav ul {
     display: flex;
     gap: 2.4rem;
     list-style: none;
 }
-header .nav-list ul li a {
+header .header-nav ul li a {
     font-size: 1.02rem;
     font-weight: 550;
     text-transform: uppercase;
@@ -208,7 +208,7 @@ main .button-02 button {
 .image-content-03 div img {
     width: 100%;
     border-radius: 30px;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem;COLOR:rgb(238, 60, 36);
 }
 .image-content-03 div:first-child img {
     box-shadow: rgb(248, 224, 82) -5px 5px, rgba(248, 224, 82, 0.60) -10px 10px, -15px 15px rgba(248, 224, 82, 0.400), rgba(248, 224, 82, 0.20) -20px 20px;
