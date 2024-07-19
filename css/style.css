@@ -20,6 +20,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
+    text-align: center;
     list-style: none;
 }
 body {
@@ -49,7 +50,8 @@ header .header-container {
     
 }
 header .header-nav {
-    flex-basis: 35.5%;
+ flex-grow: 1;
+ flex-basis: 33%;
 }
 header .header-nav ul {
     display: flex;
@@ -61,7 +63,6 @@ header .header-nav ul li a {
     font-size: 1.02rem;
     font-weight: 550;
     text-transform: uppercase;
-    text-decoration: none;
     
     color: var(--text-blue);
 }
@@ -78,16 +79,21 @@ header .header-nav ul li a:hover::after {
     width: 100%;
 }
 header .logo-header {
-    flex-basis: 40%;
+    flex-basis: 33%;
+    flex-grow: 1;
     display: flex;
+    justify-content: center;
 }
 header .logo-header img {
     width: 140px;
     cursor: pointer;
 }
 header .menu-header {
+    flex-basis: 33%;
+    flex-grow: 1;
     display: flex;
     gap: 2.5rem;
+    justify-content: flex-end;
 }
 header .menu-header img {
     cursor: pointer;
@@ -130,7 +136,6 @@ main .content-container-01 img {
     margin-bottom: 2rem;
 }
 main .text-content-01 {
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,7 +171,6 @@ main .btn-area-01 button:hover {
 /* ============ SECTION 02 ============ */
 main .section-02 {
     background-color: var(--background-white);
-    text-align: center;
     padding-block: 70px;
 }
 main .div-container-02 {
@@ -262,7 +266,6 @@ main .button-02 button:hover {
     box-shadow: rgb(248, 224, 82) 5px 5px, rgba(248, 224, 82, 0.60) 10px 10px, 15px 15px rgba(248, 224, 82, 0.400), rgba(248, 224, 82, 0.20) 20px 20px;
 }
 .image-content-03 div p {
-    text-align: center;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
     font-weight: 650;
@@ -304,7 +307,7 @@ main .button-02 button:hover {
 }
 .footer-nav-01 {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1150px;
     margin-bottom: 5rem;
 }
 .footer-nav-01 ul {
@@ -348,7 +351,7 @@ main .button-02 button:hover {
 }
 .footer-nav-02 {
     width: 100%;
-    max-width: 700px;
+    max-width: 750px;
     margin-bottom: 2.5rem;
 }
 .footer-nav-02 ul {
