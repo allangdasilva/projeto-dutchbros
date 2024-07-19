@@ -23,6 +23,7 @@
     text-align: center;
     list-style: none;
 }
+
 body {
     background-color: var(--background-white);
 }
@@ -39,6 +40,7 @@ header {
     z-index: 999;
     box-shadow: 0px 2px 15px var(--shadow);
 }
+
 header .header-container {
     display: flex;
     justify-content: space-between;
@@ -47,26 +49,30 @@ header .header-container {
     padding-inline: 40px;
     max-width: 1280px;
     margin-inline: auto;
-    
+
 }
+
 header .header-nav {
- flex-grow: 1;
- flex-basis: 33%;
+    flex-grow: 1;
+    flex-basis: 33%;
 }
+
 header .header-nav ul {
     display: flex;
     gap: 2.4rem;
     list-style: none;
     transform: translateY(2px);
 }
+
 header .header-nav ul li a {
     font-size: 1.02rem;
     font-weight: 550;
     text-transform: uppercase;
-    
+
     color: var(--text-blue);
 }
-header .header-nav ul li a::after{
+
+header .header-nav ul li a::after {
     content: '';
     display: block;
     background-color: var(--background-and-button-blue);
@@ -75,19 +81,23 @@ header .header-nav ul li a::after{
     transform: translateY(-4px);
     transition: 0.2s ease-in;
 }
+
 header .header-nav ul li a:hover::after {
     width: 100%;
 }
+
 header .logo-header {
     flex-basis: 33%;
     flex-grow: 1;
     display: flex;
     justify-content: center;
 }
+
 header .logo-header img {
     width: 140px;
     cursor: pointer;
 }
+
 header .menu-header {
     flex-basis: 33%;
     flex-grow: 1;
@@ -95,13 +105,16 @@ header .menu-header {
     gap: 2.5rem;
     justify-content: flex-end;
 }
+
 header .menu-header img {
     cursor: pointer;
     transition-duration: 0.2s;
 }
+
 header .menu-header img:hover {
     transform: scale(1.2);
 }
+
 /* ============ HEADER END ============ */
 
 
@@ -119,22 +132,26 @@ main .section-01 {
     align-items: center;
     justify-content: center;
 }
-main .section-01 > div {
+
+main .section-01>div {
     display: flex;
     width: 100%;
     max-width: 1280px;
     justify-content: flex-start;
 }
+
 main .content-container-01 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 main .content-container-01 img {
     width: 670px;
     margin-bottom: 2rem;
 }
+
 main .text-content-01 {
     display: flex;
     flex-direction: column;
@@ -142,6 +159,7 @@ main .text-content-01 {
     align-items: center;
     color: var(--background-white);
 }
+
 main .text-content-01 p {
     font-size: 1rem;
     font-weight: 550;
@@ -150,6 +168,7 @@ main .text-content-01 p {
     margin-bottom: 2rem;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.849);
 }
+
 main .btn-area-01 button {
     padding: 15px 40px;
     text-transform: uppercase;
@@ -163,9 +182,11 @@ main .btn-area-01 button {
     cursor: pointer;
     transition-duration: 0.2s;
 }
+
 main .btn-area-01 button:hover {
     box-shadow: 0px 0px 0px 8px var(--border-blue);
 }
+
 /* ============ SECTION 01 END ============ */
 
 /* ============ SECTION 02 ============ */
@@ -173,41 +194,49 @@ main .section-02 {
     background-color: var(--background-white);
     padding-block: 70px;
 }
+
 main .div-container-02 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} 
+}
+
 main .div-container-02 h2 {
     font-size: 3.2rem;
     margin-bottom: 2.5rem;
     color: var(--background-and-button-blue);
 }
+
 main .div-container-02 h2 span {
     font-size: 4rem;
 }
+
 main .image-content-02 {
     display: flex;
     max-width: 1280px;
     margin-bottom: 5rem;
     gap: 2rem;
 }
+
 main .image-content-02 div img {
     width: 90%;
     margin-bottom: 1.3rem;
     cursor: pointer;
     transition-duration: 0.2s;
 }
+
 main .image-content-02 div img:hover {
     transform: scale(0.95);
 }
+
 main .image-content-02 h3 {
     font-size: 2.3rem;
     text-transform: uppercase;
     cursor: pointer;
     color: var(--text-blue);
 }
+
 main .button-02 button {
     padding: 15px 30px;
     text-transform: uppercase;
@@ -220,9 +249,11 @@ main .button-02 button {
     cursor: pointer;
     transition-duration: 0.2s;
 }
+
 main .button-02 button:hover {
     background-color: var(--hover-button-blue);
 }
+
 /* ============ SECTION 02 END ============ */
 
 /* ============ SECTION 03 ============ */
@@ -230,6 +261,7 @@ main .button-02 button:hover {
     padding-block: 60px;
     background-color: var(--background-and-button-blue);
 }
+
 .image-content-03 {
     display: flex;
     justify-content: center;
@@ -238,6 +270,7 @@ main .button-02 button:hover {
     margin-inline: auto;
     gap: 2rem;
 }
+
 .image-content-03 div {
     width: 100%;
     display: flex;
@@ -245,26 +278,32 @@ main .button-02 button:hover {
     align-items: center;
     justify-content: center;
 }
+
 .image-content-03 div h3 {
     font-size: 2.3rem;
     color: var(--background-white);
     margin-bottom: 3rem;
 }
+
 .image-content-03 div img {
     width: 100%;
     border-radius: 30px;
     margin-bottom: 3rem;
     cursor: pointer;
 }
+
 .image-content-03 div:first-child img {
     box-shadow: rgb(248, 224, 82) -5px 5px, rgba(248, 224, 82, 0.60) -10px 10px, -15px 15px rgba(248, 224, 82, 0.400), rgba(248, 224, 82, 0.20) -20px 20px;
 }
+
 .image-content-03 div:nth-child(2) img {
     box-shadow: rgb(248, 224, 82) 0px 5px, rgba(248, 224, 82, 0.60) 0px 10px, 0px 15px rgba(248, 224, 82, 0.400), rgba(248, 224, 82, 0.20) 0px 20px;
 }
+
 .image-content-03 div:last-child img {
     box-shadow: rgb(248, 224, 82) 5px 5px, rgba(248, 224, 82, 0.60) 10px 10px, 15px 15px rgba(248, 224, 82, 0.400), rgba(248, 224, 82, 0.20) 20px 20px;
 }
+
 .image-content-03 div p {
     font-size: 1.1rem;
     letter-spacing: 0.5px;
@@ -272,6 +311,7 @@ main .button-02 button:hover {
     color: var(--background-white);
     margin-bottom: 3rem;
 }
+
 .image-content-03 button {
     padding: 15px 40px;
     text-transform: uppercase;
@@ -284,9 +324,11 @@ main .button-02 button:hover {
     cursor: pointer;
     transition-duration: 0.2s;
 }
+
 .image-content-03 button:hover {
     background-color: var(--hover-button-yellow);
 }
+
 /* ============ SECTION 03 END ============ */
 
 
@@ -299,27 +341,33 @@ main .button-02 button:hover {
     padding: 40px 0px 60px 0px;
     background-color: var(--background-white);
 }
+
 .footer-logo {
     margin-bottom: 2rem;
 }
+
 .footer-logo img {
     cursor: pointer;
 }
+
 .footer-nav-01 {
     width: 100%;
     max-width: 1150px;
     margin-bottom: 5rem;
 }
+
 .footer-nav-01 ul {
     display: flex;
     justify-content: space-between;
 }
+
 .footer-nav-01 ul a {
     font-size: 1.1rem;
     font-weight: 580;
     text-transform: uppercase;
     color: var(--background-and-button-blue);
 }
+
 .footer-nav-01 ul a::after {
     content: '';
     display: block;
@@ -329,41 +377,50 @@ main .button-02 button:hover {
     transform: translateY(-4px);
     transition: 0.2s ease-in;
 }
+
 .footer-nav-01 ul a:hover::after {
     width: 100%;
 }
+
 .footer-container h4 {
     font-size: 1.5rem;
     margin-bottom: 1.3rem;
     color: var(--background-and-button-blue);
 }
+
 .image-content-footer {
     display: flex;
     gap: 1rem;
     margin-bottom: 3rem;
 }
+
 .image-content-footer img {
     transition-duration: 0.2s;
     cursor: pointer;
 }
+
 .image-content-footer img:hover {
     transform: scale(1.1);
 }
+
 .footer-nav-02 {
     width: 100%;
     max-width: 750px;
     margin-bottom: 2.5rem;
 }
+
 .footer-nav-02 ul {
     display: flex;
     justify-content: space-between;
 }
+
 .footer-nav-02 ul a {
     font-size: 0.9rem;
     font-weight: 580;
     text-transform: uppercase;
     color: var(--background-and-button-blue);
 }
+
 .footer-nav-02 ul a::after {
     content: '';
     display: block;
@@ -373,27 +430,33 @@ main .button-02 button:hover {
     transform: translateY(-4px);
     transition: 0.2s ease-in;
 }
+
 .footer-nav-02 ul a:hover::after {
     width: 100%;
 }
-.footer-container > a:hover {
+
+.footer-container>a:hover {
     text-decoration: underline;
 }
+
 .icons-footer {
     display: flex;
     gap: 2rem;
     margin-block: 1.5rem;
 }
+
 .icons-footer a {
     font-size: 2rem;
     color: var(--button-01);
     transition-duration: 0.2s;
 }
+
 .icons-footer a:hover {
     transform: scale(1.2);
 }
-.footer-container > a,
-.footer-container > p {
+
+.footer-container>a,
+.footer-container>p {
     font-size: 0.7rem;
     color: var(--background-and-button-blue);
 }
