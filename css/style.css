@@ -57,6 +57,10 @@ header .header-nav {
     flex-basis: 33%;
 }
 
+header .toggle-menu {
+    display: none;
+}
+
 header .header-nav ul {
     display: flex;
     gap: 2.4rem;
@@ -257,12 +261,13 @@ main .button-02 button:hover {
 /* ============ SECTION 02 END ============ */
 
 /* ============ SECTION 03 ============ */
-.section-03 {
+main .section-03 {
     padding-block: 60px;
     background-color: var(--background-and-button-blue);
 }
 
-.image-content-03 {
+main .image-content-03 {
+    width: 98%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,7 +276,7 @@ main .button-02 button:hover {
     gap: 2rem;
 }
 
-.image-content-03 div {
+main .image-content-03 div {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -279,32 +284,32 @@ main .button-02 button:hover {
     justify-content: center;
 }
 
-.image-content-03 div h3 {
+main .image-content-03 div h3 {
     font-size: 2.3rem;
     color: var(--background-white);
     margin-bottom: 3rem;
 }
 
-.image-content-03 div img {
+main .image-content-03 div img {
     width: 100%;
     border-radius: 30px;
     margin-bottom: 3rem;
     cursor: pointer;
 }
 
-.image-content-03 div:first-child img {
+main .image-content-03 div:first-child img {
     box-shadow: rgb(248, 224, 82) -5px 5px, rgba(248, 224, 82, 0.60) -10px 10px, -15px 15px rgba(248, 224, 82, 0.400), rgba(248, 224, 82, 0.20) -20px 20px;
 }
 
-.image-content-03 div:nth-child(2) img {
+main .image-content-03 div:nth-child(2) img {
     box-shadow: rgb(248, 224, 82) 0px 5px, rgba(248, 224, 82, 0.60) 0px 10px, 0px 15px rgba(248, 224, 82, 0.400), rgba(248, 224, 82, 0.20) 0px 20px;
 }
 
-.image-content-03 div:last-child img {
+main .image-content-03 div:last-child img {
     box-shadow: rgb(248, 224, 82) 5px 5px, rgba(248, 224, 82, 0.60) 10px 10px, 15px 15px rgba(248, 224, 82, 0.400), rgba(248, 224, 82, 0.20) 20px 20px;
 }
 
-.image-content-03 div p {
+main .image-content-03 div p {
     font-size: 1.1rem;
     letter-spacing: 0.5px;
     font-weight: 650;
@@ -312,7 +317,7 @@ main .button-02 button:hover {
     margin-bottom: 3rem;
 }
 
-.image-content-03 button {
+main .image-content-03 button {
     padding: 15px 40px;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -325,7 +330,7 @@ main .button-02 button:hover {
     transition-duration: 0.2s;
 }
 
-.image-content-03 button:hover {
+main .image-content-03 button:hover {
     background-color: var(--hover-button-yellow);
 }
 
@@ -333,7 +338,7 @@ main .button-02 button:hover {
 
 
 /* ============ FOOTER ============ */
-.footer-container {
+footer .footer-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -342,33 +347,36 @@ main .button-02 button:hover {
     background-color: var(--background-white);
 }
 
-.footer-logo {
+footer .footer-logo {
     margin-bottom: 2rem;
 }
 
-.footer-logo img {
+footer .footer-logo img {
     cursor: pointer;
 }
 
-.footer-nav-01 {
+footer .footer-nav-01 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
     max-width: 1150px;
     margin-bottom: 5rem;
 }
 
-.footer-nav-01 ul {
+footer .footer-nav-01 ul {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
 }
 
-.footer-nav-01 ul a {
+footer .footer-nav-01 ul a {
     font-size: 1.1rem;
     font-weight: 580;
     text-transform: uppercase;
     color: var(--background-and-button-blue);
 }
 
-.footer-nav-01 ul a::after {
+footer .footer-nav-01 ul a::after {
     content: '';
     display: block;
     background-color: var(--background-and-button-blue);
@@ -378,50 +386,51 @@ main .button-02 button:hover {
     transition: 0.2s ease-in;
 }
 
-.footer-nav-01 ul a:hover::after {
+footer .footer-nav-01 ul a:hover::after {
     width: 100%;
 }
 
-.footer-container h4 {
+footer .footer-container h4 {
     font-size: 1.5rem;
     margin-bottom: 1.3rem;
     color: var(--background-and-button-blue);
 }
 
-.image-content-footer {
+footer .image-content-footer {
     display: flex;
     gap: 1rem;
     margin-bottom: 3rem;
 }
 
-.image-content-footer img {
+footer .image-content-footer img {
     transition-duration: 0.2s;
     cursor: pointer;
 }
 
-.image-content-footer img:hover {
+footer .image-content-footer img:hover {
     transform: scale(1.1);
 }
 
-.footer-nav-02 {
+footer .footer-nav-02 {
     width: 100%;
     max-width: 750px;
     margin-bottom: 2.5rem;
 }
 
-.footer-nav-02 ul {
+footer .footer-nav-02 ul {
     display: flex;
     justify-content: space-between;
+    margin-inline: 5px;
 }
 
-.footer-nav-02 ul a {
+footer .footer-nav-02 ul a {
     font-size: 0.9rem;
     font-weight: 580;
     text-transform: uppercase;
     color: var(--background-and-button-blue);
 }
 
-.footer-nav-02 ul a::after {
+footer .footer-nav-02 ul a::after {
     content: '';
     display: block;
     background-color: var(--background-and-button-blue);
@@ -431,32 +440,32 @@ main .button-02 button:hover {
     transition: 0.2s ease-in;
 }
 
-.footer-nav-02 ul a:hover::after {
+footer .footer-nav-02 ul a:hover::after {
     width: 100%;
 }
 
-.footer-container>a:hover {
+footer .footer-container>a:hover {
     text-decoration: underline;
 }
 
-.icons-footer {
+footer .icons-footer {
     display: flex;
     gap: 2rem;
     margin-block: 1.5rem;
 }
 
-.icons-footer a {
+footer .icons-footer a {
     font-size: 2rem;
     color: var(--button-01);
     transition-duration: 0.2s;
 }
 
-.icons-footer a:hover {
+footer .icons-footer a:hover {
     transform: scale(1.2);
 }
 
-.footer-container>a,
-.footer-container>p {
+footer .footer-container>a,
+footer .footer-container>p {
     font-size: 0.7rem;
     color: var(--background-and-button-blue);
 }
