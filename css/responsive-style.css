@@ -15,26 +15,126 @@
 @media screen and (max-width:1000px) {
     header .toggle-menu {
         width: 30px;
+        position: absolute;
+        bottom: 19px;
         display: block;
         border: none;
         background: none;
         border-top: 4px solid var(--background-and-button-blue);
         cursor: pointer;
+        z-index: 999;
+        transition-duration: 0.3s;
     }
 
     header .toggle-menu::after,
     header .toggle-menu::before {
         content: '';
         display: block;
+        position: relative;
         width: 30px;
         height: 4px;
         background: var(--background-and-button-blue);
         margin-top: 5px;
+        transition-duration: 0.3s;
+    }
+
+    header .toggle-menu.active {
+        border-top: transparent;
+    }
+
+    header .toggle-menu.active::after {
+        transform: rotate(135deg);
+        bottom: 9px;
+    }
+
+    header .toggle-menu.active::before {
+        transform: rotate(-135deg);
     }
 
     header .header-nav ul {
         display: none;
     }
+
+
+    header .header-container-responsive {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: var(--background-white);
+        transform: translateX(-100%);
+        transition-duration: 0.4s;
+        transition: 0.4s ease-in-out;
+    }
+
+    header .header-container-responsive.active {
+        transform: translateX(0%);
+    }
+
+    header .header-nav-responsive {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    header .logo-header-responsive {
+        padding-top: 7.5px;
+    }
+
+    header .logo-header-responsive a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .logo-header-responsive img {
+        width: 140px;
+    }
+
+    header .header-nav-responsive ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header .header-nav-responsive ul a {
+        font-size: 1.2rem;
+        font-weight: 550;
+        text-transform: uppercase;
+        color: var(--text-blue);
+    }
+
+    header .header-nav-responsive h4 {
+        font-size: 1.4rem;
+        color: var(--background-and-button-blue);
+    }
+
+    header .image-content-responsive {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .icons-responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    header .icons-responsive a {
+        font-size: 2.2rem;
+        color: var(--button-01);
+    }
+
+    header .header-nav-responsive p {
+        font-size: 0.7rem;
+        color: var(--background-and-button-blue);
+    }
+
 
     main .section-01>div {
         justify-content: center;
@@ -183,6 +283,19 @@
         gap: 1.3rem;
     }
 
+    header .header-nav-responsive h4 {
+        margin-inline: 5px;
+        font-size: 1.2rem;
+    }
+
+    header .image-content-responsive a {
+        display: flex;
+    }
+
+    header .image-content-responsive img {
+        width: 105px;
+    }
+
     main .section-01 {
         height: 650px;
     }
@@ -205,5 +318,72 @@
 
     footer .image-content-footer img {
         width: 110px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    main .image-content-02 div h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-height:520px) {
+
+    header .header-nav-responsive {
+        gap: 5px;
+    }
+
+    header .logo-header-responsive {
+        padding-top: 5px;
+    }
+
+    header .header-nav-responsive ul {
+        gap: 5px;
+    }
+
+    header .header-nav-responsive ul a {
+        font-size: 0.8rem;
+    }
+
+    .button-02 button {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 5px 15px;
+    }
+
+    header .header-nav-responsive h4 {
+        font-size: 1rem;
+    }
+
+    header .image-content-responsive img {
+        width: 90px;
+    }
+
+    header .icons-responsive a {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-height:320px) {
+    header .logo-header-responsive img {
+        width: 90px;
+    }
+
+    header .header-nav-responsive ul a {
+        font-size: 0.6rem;
+    }
+
+    .button-02 button {
+        font-size: 0.8rem;
+        font-weight: 400;
+        padding: 2px 10px;
+    }
+
+    header .header-nav-responsive h4 {
+        font-size: 0.8rem;
+    }
+
+    header .icons-responsive a {
+        font-size: 1.2rem;
     }
 }

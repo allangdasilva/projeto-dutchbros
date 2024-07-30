@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
 </head>
+
 <body>
     <header>
         <div class="header-container">
             <nav class="header-nav">
-                <div class="toggle-menu"></div>
+                <div class="toggle-menu" onclick="toggle()" id="btn"></div>
                 <ul>
                     <li><a href="#">menu</a></li>
                     <li><a href="#">rewards</a></li>
@@ -19,7 +21,7 @@
                 </ul>
             </nav>
             <div class="logo-header">
-                <img src="images/header_logo.png" alt="Logo Dutch Bros">
+                <a href="#"><img src="images/header_logo.png" alt="Logo Dutch Bros"></a>
             </div>
             <div class="menu-header">
                 <img src="images/Locator.svg" alt="Locations">
@@ -27,13 +29,13 @@
             </div>
         </div>
 
-        <div class="header-container-responsive">
+        <div class="header-container-responsive" id="menu">
 
             <nav class="header-nav-responsive">
 
 
-                <div class="logo-header">
-                    <img src="images/header_logo.png" alt="Logo Dutch Bros">
+                <div class="logo-header-responsive">
+                    <a href="#"><img src="images/header_logo.png" alt="Logo Dutch Bros"></a>
                 </div>
 
                 <ul>
@@ -50,8 +52,14 @@
                 <h4>DOWNLOAD OUR APP TO START EARNING FREE DRINKS!</h4>
 
                 <div class="image-content-responsive">
-                    <img src="images/dbros-google-play.png" alt="App Google play">
-                    <img src="images/dbros-app-store.png" alt="App App store">
+                    <a href="#"><img src="images/dbros-google-play.png" alt="App Google play"></a>
+                    <a href="#"><img src="images/dbros-app-store.png" alt="App App store"></a>
+                </div>
+
+                <div class="icons-responsive">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
 
                 <p>&copy;Dutch Bros Coffee - All Right Reserved</p>
@@ -59,19 +67,18 @@
             </nav>
 
         </div>
-        
+
     </header>
 
     <main>
-
         <section class="section-01">
 
             <div class="div-container-01">
                 <div class="content-container-01">
                     <div class="text-content-01">
-                
+
                         <img src="images/2024-Chillin-W-Dutch-Lockup.webp" alt="Chillin">
-                
+
                         <p>Dutch Bros is your summer cool down spot. Roll in to try
                             three new cravings including the Cookie Dough Freeze,
                             Sherbet Rebel energy drink, and Tropical Frosted
@@ -82,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
 
         <section class="section-02">
@@ -117,19 +124,19 @@
             <div class="image-content-03">
                 <div>
                     <h3>DUTCH AT HOME</h3>
-                    <img src="images/Dutch_At_Home_Coffee_Tile.webp" alt="Home Coffe">                    
+                    <img src="images/Dutch_At_Home_Coffee_Tile.webp" alt="Home Coffe">
                     <p>Get Dutch Bros delivered to your door!</p>
                     <button class="btn-03">learn more</button>
                 </div>
                 <div>
                     <h3>WE'RE HIRING!</h3>
-                    <img src="images/homepage broista.webp" alt="Broista">                  
+                    <img src="images/homepage broista.webp" alt="Broista">
                     <p>Let’s make a difference together!</p>
                     <button class="btn-03">coffe time</button>
                 </div>
                 <div>
                     <h3>OUR IMPACT</h3>
-                    <img src="images/ezgif-3-c0a1e398cd.webp" alt="Delivery">                   
+                    <img src="images/ezgif-3-c0a1e398cd.webp" alt="Delivery">
                     <p>See how we’re making a difference!</p>
                     <button class="btn-03">learn more</button>
                 </div>
@@ -137,7 +144,7 @@
 
         </section>
     </main>
-    
+
     <footer>
         <div class="footer-container">
             <div class="footer-logo"><img src="images/footer_logo.svg" alt="Logo Dutch Bros"></div>
@@ -148,7 +155,7 @@
                     <li><a href="#">our story</a></li>
                     <li><a href="#">our impact</a></li>
                 </ul>
-                <ul>    
+                <ul>
                     <li><a href="#">news e events</a></li>
                     <li><a href="#">investors</a></li>
                     <li><a href="#">shop dutch</a></li>
@@ -159,8 +166,8 @@
             <h4>DOWNLOAD OUR APP TO START EARNING FREE DRINKS!</h4>
 
             <div class="image-content-footer">
-                <img src="images/dbros-google-play.png" alt="App Google play">
-                <img src="images/dbros-app-store.png" alt="App App store">
+                <a href="#"><img src="images/dbros-google-play.png" alt="App Google play"></a>
+                <a href="#"><img src="images/dbros-app-store.png" alt="App App store"></a>
             </div>
             <nav class="footer-nav-02">
                 <ul>
@@ -183,6 +190,7 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/c0a77e3bb7.js" crossorigin="anonymous"></script>
 
 </body>

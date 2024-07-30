@@ -64,7 +64,6 @@ header .toggle-menu {
 header .header-nav ul {
     display: flex;
     gap: 2.4rem;
-    list-style: none;
     transform: translateY(2px);
 }
 
@@ -97,6 +96,10 @@ header .logo-header {
     justify-content: center;
 }
 
+header .logo-header a {
+    display: flex;
+}
+
 header .logo-header img {
     width: 140px;
     cursor: pointer;
@@ -118,6 +121,11 @@ header .menu-header img {
 header .menu-header img:hover {
     transform: scale(1.2);
 }
+
+header .header-container-responsive {
+    display: none;
+}
+
 
 /* ============ HEADER END ============ */
 
@@ -400,6 +408,10 @@ footer .image-content-footer {
     display: flex;
     gap: 1rem;
     margin-bottom: 3rem;
+}
+
+footer .image-content-footer a {
+    display: flex;
 }
 
 footer .image-content-footer img {
