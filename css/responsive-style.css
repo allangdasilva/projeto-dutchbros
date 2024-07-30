@@ -12,6 +12,12 @@
     --shadow: #00000033;
 }
 
+@media screen and (max-width:1180px) {
+    main .image-content-03 div h3 {
+        font-size: 3vw;
+    }
+}
+
 @media screen and (max-width:1000px) {
     header .toggle-menu {
         width: 30px;
@@ -82,13 +88,14 @@
     }
 
     header .logo-header-responsive {
+        display: flex;
+        justify-content: center;
         padding-top: 7.5px;
     }
 
     header .logo-header-responsive a {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 140px;
     }
 
     header .logo-header-responsive img {
@@ -212,6 +219,7 @@
     }
 
     main .image-content-02 div h3 {
+        font-size: 5vw;
         margin-inline: 5px;
         flex-basis: 45%;
     }
@@ -241,6 +249,14 @@
 
     main .image-content-03 div:last-child img {
         box-shadow: 0px 0px 0px 10px var(--button-yellow);
+    }
+
+    main .image-content-03 div h3 {
+        font-size: 2.3rem;
+    }
+
+    main .image-content-03 div p {
+        font-size: 1.1rem;
     }
 
     main .image-content-03 div h3,
@@ -300,10 +316,6 @@
         height: 650px;
     }
 
-    main .image-content-02 div h3 {
-        font-size: 1.8rem;
-    }
-
     footer .footer-logo img {
         width: 100%;
     }
@@ -318,12 +330,6 @@
 
     footer .image-content-footer img {
         width: 110px;
-    }
-}
-
-@media screen and (max-width:340px) {
-    main .image-content-02 div h3 {
-        font-size: 1.4rem;
     }
 }
 
@@ -345,7 +351,7 @@
         font-size: 0.8rem;
     }
 
-    .button-02 button {
+    header .button-02 button {
         font-size: 1rem;
         font-weight: 500;
         padding: 5px 15px;
