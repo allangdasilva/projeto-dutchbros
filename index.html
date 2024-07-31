@@ -10,186 +10,162 @@
     <link rel="shortcut icon" href="images/favicon-dutchbros.png" type="image/x-icon">
 </head>
 
-<body>
-    <header>
-        <div class="header-container">
-            <nav class="header-nav">
-                <div class="toggle-menu" onclick="toggle()" id="btn"></div>
-                <ul>
-                    <li><a href="#">menu</a></li>
-                    <li><a href="#">rewards</a></li>
-                    <li><a href="#">gift cards</a></li>
-                </ul>
-            </nav>
-            <div class="logo-header">
-                <a href="#"><img src="images/header_logo.png" alt="Logo Dutch Bros"></a>
-            </div>
-            <div class="menu-header">
-                <img src="images/Locator.svg" alt="Locations">
-                <img src="images/Menu.svg" alt="Menu">
-            </div>
-        </div>
+<body onload="loading()">
 
-        <div class="header-container-responsive" id="menu">
+    <div class="preloader" id="preload">
+        <div class="loader" id="load"></div>
+    </div>
 
-            <nav class="header-nav-responsive">
-
-
-                <div class="logo-header-responsive">
+    <div id="container-base">
+        <header>
+            <div class="header-container">
+                <nav class="header-nav">
+                    <div class="toggle-menu" onclick="toggle()" id="btn"></div>
+                    <ul>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">rewards</a></li>
+                        <li><a href="#">gift cards</a></li>
+                    </ul>
+                </nav>
+                <div class="logo-header">
                     <a href="#"><img src="images/header_logo.png" alt="Logo Dutch Bros"></a>
                 </div>
-
-                <ul>
-                    <li><a href="#">locations</a></li>
-                    <li><a href="#">menu</a></li>
-                    <li><a href="#">rewards</a></li>
-                    <li><a href="#">gift cards</a></li>
-                </ul>
-
-                <div class="button-02">
-                    <button>shop now</button>
+                <div class="menu-header">
+                    <img src="images/Locator.svg" alt="Locations">
+                    <img src="images/Menu.svg" alt="Menu">
                 </div>
-
+            </div>
+            <div class="header-container-responsive" id="menu">
+                <nav class="header-nav-responsive">
+                    <div class="logo-header-responsive">
+                        <a href="#"><img src="images/header_logo.png" alt="Logo Dutch Bros"></a>
+                    </div>
+                    <ul>
+                        <li><a href="#">locations</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">rewards</a></li>
+                        <li><a href="#">gift cards</a></li>
+                    </ul>
+                    <div class="button-02">
+                        <button>shop now</button>
+                    </div>
+                    <h4>DOWNLOAD OUR APP TO START EARNING FREE DRINKS!</h4>
+                    <div class="image-content-responsive">
+                        <a href="#"><img src="images/dbros-google-play.png" alt="App Google play"></a>
+                        <a href="#"><img src="images/dbros-app-store.png" alt="App App store"></a>
+                    </div>
+                    <div class="icons-responsive">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <p>&copy;Dutch Bros Coffee - All Right Reserved</p>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="section-01">
+                <div class="div-container-01">
+                    <div class="content-container-01">
+                        <div class="text-content-01">
+                            <img src="images/2024-Chillin-W-Dutch-Lockup.webp" alt="Chillin">
+                            <p>Dutch Bros is your summer cool down spot. Roll in to try
+                                three new cravings including the Cookie Dough Freeze,
+                                Sherbet Rebel energy drink, and Tropical Frosted
+                                Lemonade. Available while supplies last.</p>
+                        </div>
+                        <div class="btn-area-01">
+                            <button>View Menu</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-02">
+                <div class="div-container-02">
+                    <h2>DUTCH COFFEE<span>&reg;</span> DRIVE THRU FAVES</h2>
+                    <div class="image-content-02">
+                        <div>
+                            <img src="images/homepage_menu_tile_classics.webp" alt="Dutch Faves">
+                            <h3>dutch faves</h3>
+                        </div>
+                        <div>
+                            <img src="images/homepage_drink_tile_rebel_2_0.webp" alt="Rebel">
+                            <h3>rebel</h3>
+                        </div>
+                        <div>
+                            <img src="images/homepage_menu_tile_cold brew.webp" alt="Coffe Classics">
+                            <h3>coffe classics</h3>
+                        </div>
+                    </div>
+                    <div class="button-02">
+                        <button>see full menu</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section-03">
+                <div class="image-content-03">
+                    <div>
+                        <h3>DUTCH AT HOME</h3>
+                        <img src="images/Dutch_At_Home_Coffee_Tile.webp" alt="Home Coffe">
+                        <p>Get Dutch Bros delivered to your door!</p>
+                        <button class="btn-03">learn more</button>
+                    </div>
+                    <div>
+                        <h3>WE'RE HIRING!</h3>
+                        <img src="images/homepage broista.webp" alt="Broista">
+                        <p>Let’s make a difference together!</p>
+                        <button class="btn-03">coffe time</button>
+                    </div>
+                    <div>
+                        <h3>OUR IMPACT</h3>
+                        <img src="images/ezgif-3-c0a1e398cd.webp" alt="Delivery">
+                        <p>See how we’re making a difference!</p>
+                        <button class="btn-03">learn more</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo"><img src="images/footer_logo.svg" alt="Logo Dutch Bros"></div>
+                <nav class="footer-nav-01">
+                    <ul>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">carrer</a></li>
+                        <li><a href="#">our story</a></li>
+                        <li><a href="#">our impact</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">news e events</a></li>
+                        <li><a href="#">investors</a></li>
+                        <li><a href="#">shop dutch</a></li>
+                        <li><a href="#">nutrition</a></li>
+                    </ul>
+                </nav>
                 <h4>DOWNLOAD OUR APP TO START EARNING FREE DRINKS!</h4>
-
-                <div class="image-content-responsive">
+                <div class="image-content-footer">
                     <a href="#"><img src="images/dbros-google-play.png" alt="App Google play"></a>
                     <a href="#"><img src="images/dbros-app-store.png" alt="App App store"></a>
                 </div>
-
-                <div class="icons-responsive">
+                <nav class="footer-nav-02">
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">UGC T+C</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Digital Accessibility</a></li>
+                    </ul>
+                </nav>
+                <a href="#">Do Not Share My Personal Information</a>
+                <div class="icons-footer">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
-
                 <p>&copy;Dutch Bros Coffee - All Right Reserved</p>
-
-            </nav>
-
-        </div>
-
-    </header>
-
-    <main>
-        <section class="section-01">
-
-            <div class="div-container-01">
-                <div class="content-container-01">
-                    <div class="text-content-01">
-
-                        <img src="images/2024-Chillin-W-Dutch-Lockup.webp" alt="Chillin">
-
-                        <p>Dutch Bros is your summer cool down spot. Roll in to try
-                            three new cravings including the Cookie Dough Freeze,
-                            Sherbet Rebel energy drink, and Tropical Frosted
-                            Lemonade. Available while supplies last.</p>
-                    </div>
-                    <div class="btn-area-01">
-                        <button>View Menu</button>
-                    </div>
-                </div>
             </div>
+        </footer>
+    </div>
 
-        </section>
-
-        <section class="section-02">
-
-            <div class="div-container-02">
-                <h2>DUTCH COFFEE<span>&reg;</span> DRIVE THRU FAVES</h2>
-
-                <div class="image-content-02">
-                    <div>
-                        <img src="images/homepage_menu_tile_classics.webp" alt="Dutch Faves">
-                        <h3>dutch faves</h3>
-                    </div>
-                    <div>
-                        <img src="images/homepage_drink_tile_rebel_2_0.webp" alt="Rebel">
-                        <h3>rebel</h3>
-                    </div>
-                    <div>
-                        <img src="images/homepage_menu_tile_cold brew.webp" alt="Coffe Classics">
-                        <h3>coffe classics</h3>
-                    </div>
-                </div>
-
-                <div class="button-02">
-                    <button>see full menu</button>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="section-03">
-
-            <div class="image-content-03">
-                <div>
-                    <h3>DUTCH AT HOME</h3>
-                    <img src="images/Dutch_At_Home_Coffee_Tile.webp" alt="Home Coffe">
-                    <p>Get Dutch Bros delivered to your door!</p>
-                    <button class="btn-03">learn more</button>
-                </div>
-                <div>
-                    <h3>WE'RE HIRING!</h3>
-                    <img src="images/homepage broista.webp" alt="Broista">
-                    <p>Let’s make a difference together!</p>
-                    <button class="btn-03">coffe time</button>
-                </div>
-                <div>
-                    <h3>OUR IMPACT</h3>
-                    <img src="images/ezgif-3-c0a1e398cd.webp" alt="Delivery">
-                    <p>See how we’re making a difference!</p>
-                    <button class="btn-03">learn more</button>
-                </div>
-            </div>
-
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo"><img src="images/footer_logo.svg" alt="Logo Dutch Bros"></div>
-            <nav class="footer-nav-01">
-                <ul>
-                    <li><a href="#">contact us</a></li>
-                    <li><a href="#">carrer</a></li>
-                    <li><a href="#">our story</a></li>
-                    <li><a href="#">our impact</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">news e events</a></li>
-                    <li><a href="#">investors</a></li>
-                    <li><a href="#">shop dutch</a></li>
-                    <li><a href="#">nutrition</a></li>
-                </ul>
-            </nav>
-
-            <h4>DOWNLOAD OUR APP TO START EARNING FREE DRINKS!</h4>
-
-            <div class="image-content-footer">
-                <a href="#"><img src="images/dbros-google-play.png" alt="App Google play"></a>
-                <a href="#"><img src="images/dbros-app-store.png" alt="App App store"></a>
-            </div>
-            <nav class="footer-nav-02">
-                <ul>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">UGC T+C</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Digital Accessibility</a></li>
-                </ul>
-            </nav>
-
-            <a href="#">Do Not Share My Personal Information</a>
-
-            <div class="icons-footer">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-
-            <p>&copy;Dutch Bros Coffee - All Right Reserved</p>
-        </div>
-    </footer>
 
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/c0a77e3bb7.js" crossorigin="anonymous"></script>
